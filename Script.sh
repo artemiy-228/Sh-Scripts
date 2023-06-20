@@ -1,6 +1,6 @@
 i_path=$(dirname "$(realpath "$0")")
 
-echo -n "Do you want to save the new video file in this directory? (yes, no): "
+echo -n "Do you want to save the new video file in this directory ($i_path/mp4_videos)? (yes, no): "
 read t
 echo ""
 
