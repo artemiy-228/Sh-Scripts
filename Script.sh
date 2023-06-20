@@ -4,12 +4,12 @@ echo -n "Do you want to save the new video file in this directory? (yes, no): "
 read t
 echo ""
 
-if [[ t -eq "no" ]] || [[ t -eq "n" ]]  || [[ t -eq "N" ]] || [[ t -eq "No" ]]; then
+if [[ $t = "no" ]]; then
     echo -n "Input your path to file(first and last without /): "
     read i_path
     echo ""
 else
-    echo -n "Incorrect answer! Videos will be recorded in the directory: $i_path/mp4_videos"
+    echo "Videos will be recorded in the directory: $i_path/mp4_videos"
     echo ""
 fi
 
