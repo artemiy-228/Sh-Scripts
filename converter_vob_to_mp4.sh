@@ -1,7 +1,7 @@
 #!/bin/bash
 
 output_path=${1:-$PWD}
-echo "All videos will be saved to this address: $output_path"
+echo "All videos will be saved to this directory: $output_path"
 echo ""
 
 for file in $output_path/*.vob; do
